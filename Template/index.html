@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+</head>
+<style>
+body{
+background-image:url('bg 1.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+<body 
+<body text="white">
+<center><br>
+<h1 class="title"><u><b>Prediction form</u><b></h1><br>
+        <form action="{{ url_for('predict')}}" method="post">
+     <h2><i>Enter the Information Below and find if a Customer will Churn out or not.</i></h2>
+    <div class="contentform">
+         <div class="form-group">
+           <p><b>Credit Score</b><p>
+            <input name="CreditScore" name="CreditScore" type="number" >
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p><b>Age </b><span>*</span></p>
+            <span class="icon-case"></span>
+    <input name="Age" required="required">
+                <div class="validation"></div>
+   </div>
+
+   <div class="form-group">
+   <p><b>Tenure :<br>
+                <input name="Tenure" required="required">
+                <div class="validation"></div>
+   </div> 
+
+   <div class="form-group">
+   <p><b>Enter the Account Balance: </b><span>*</span></p>
+   <span class="icon-case"></span>
+    <input name="Balance" required="required">
+                <div class="validation"></div>
+   </div>
+
+   <div class="form-group">
+   <p><b>Number of Products </b><span>*</span></p>
+   <span class="icon-case"></span>
+    <input name="NumOfProducts" required="required">
+                <div class="validation"></div>
+   </div>
+
+   <div class="form-group">
+   <p><b>Do the Customer have Credit Card? (1=Yes, 0=No) </b><span>*</span></p>
+   <span class="icon-case"></span>
+    <input name="HasCrCard" required="required">
+                <div class="validation"></div>
+   </div> 
+ </div>
+
+   <div class="form-group">
+   <p><b>Is the Customer Active Member (1=Yes, 0=No)</b><span>*</span></p>
+   <span class="icon-case"></span>
+    <input name="IsActiveMember" required="required">
+                <div class="validation"></div>
+   </div> 
+
+   <div class="form-group">
+   <p><b>Enter the Estimated Salary:</b> <span>*</span></p> 
+   <span class="icon-case"></span>
+    <input name="EstimatedSalary" required="required">
+                <div class="validation"></div>
+   </div>
+
+   <div class="form-group">
+   <p><b>Enter The Location:</b><br>
+                <select name="Geography_Germany" required="required">
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+            </select>
+            <div class="validation"></div>
+   </div>
+
+   <div class="form-group">
+   <p><b>Gender of Customer:</b><br>
+                <select name="Gender_Male" id="resea" required="required"></h3>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+                <div class="validation"></div>
+   </div> 
+ </div>
+ </div></h3>
+<center><br><br><button type="submit " class><h2>Predict</button></h2></center>
+</form>
+    <center><a href="predyes.html"></center></a>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
